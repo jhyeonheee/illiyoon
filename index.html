@@ -12,6 +12,22 @@
 
     <script>
         window.onload = () => {
+            let header = document.getElementsByClassName('header')[0];
+
+            window.addEventListener('scroll', () => {
+                let scrollBar = window.scrollY;
+                console.log(scrollBar);
+            
+
+            if(scrollBar > 200) {
+                header.classList.add('active');
+            } else{
+                 header.classList.remove('active');}
+
+            });//header 스크롤 시 색상변화
+
+
+
             let gnb = document.querySelectorAll('.gnb li');
 
             for (let i = 0; i < gnb.length; i++) {
@@ -2326,7 +2342,9 @@
         </div><!-- .bottom_nav end -->
 
         <footer class="footer">
+            <div class="inner">
 
+            </div><!-- .inner end -->
         </footer><!-- .footer end -->
 
     </div><!-- #wrap end -->
