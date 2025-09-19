@@ -9,6 +9,12 @@ body {
     background-color: antiquewhite;
     font-family: 'pretendard';
     color: #1B1D1F;
+    
+
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 #wrap {
@@ -420,7 +426,7 @@ body {
 
 .section-03 img {
     width: 100%;
-    height: 100px;
+    /* height: 100px; */
     
 }
 
@@ -878,7 +884,7 @@ body {
 
 .section-06 .item .image img {
     width: 100%;
-    height: 94px;
+    /* height: 94px; */
     flex-shrink: 0;
     border-radius: 8px
     
@@ -931,9 +937,18 @@ body {
     border-radius: 10px;
 }
 
+.section-07 .swiper.gift .swiper-slide .image.big h3{
+    font-size: 17px;
+    font-weight: bold;
+    
+}
+.section-07 .swiper.gift .swiper-slide .image.big .search_box{}
+.section-07 .swiper.gift .swiper-slide .image.big .search_box input{}
+
 .section-07 .swiper.gift .swiper-slide .image {
     width: 150px;
      overflow: hidden;
+     position: relative;
 }
 .section-07 .swiper.gift .swiper-slide .image img{
     width: 100%;
@@ -941,6 +956,99 @@ body {
     object-fit: cover;
     border-radius: 10px;
 }
-.section-07 .swiper.gift .swiper-slide .image h3{}
+.section-07 .swiper.gift .swiper-slide .image h3{
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+     top: 35px;
+     left: 50%;
+     transform: translate(-50%, 0);
+     white-space: nowrap;
+}
 .section-07 .swiper.gift .swiper-slide .image .search_box{}
 .section-07 .swiper.gift .swiper-slide .image .search_box input{}
+
+.swiper-slide .swiper-slide-next{
+    
+}
+
+.section-07 .record {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+   width: 129px;
+   padding: 10px 20px;
+   background-color: #f0f0f0;
+   text-align: center;
+   line-height: 15px;
+   border-radius: 30px;
+   margin: 15px 0 22px;
+}
+
+.section-07 .record img {
+    width: 10px;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 8px;
+}
+
+.section-07 .record p {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.section-07 .card_list{
+    display: flex;
+}
+
+.section-07 .card_list a{
+    display: block;
+}
+
+.section-07 .card_list .mycard {
+    display: flex;
+    flex-direction: column;
+    width: 49px;
+    height: 49px;
+    background-color: #E9EBED;
+    border-radius: 5px;
+    text-align: center;
+    
+
+    
+}
+.section-07 .card_list .mycard img{
+    width: 20px;
+    height: 100%;
+    object-fit: cover;
+    transform: translateX(15px);
+}
+.section-07 .card_list .mycard h3{
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+    color: #9FA4A9;
+   
+}
+.section-07 button{
+    
+}
+.section-07 .card_list .item {
+    width: 49px;
+    
+    white-space: nowrap;
+   
+    
+}
+.section-07 .card_list .item img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+/* .section-07 end */
+
+.bottom_nav {
+    
+}
