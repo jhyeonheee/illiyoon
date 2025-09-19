@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일리윤</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        window.onload = () => {
+            let gnb = document.querySelectorAll('.gnb li');
+
+            for (let i = 0; i < gnb.length; i++) {
+                gnb[i].addEventListener('mouseenter', () => {
+                    gnb.forEach(gnbIndex => {
+                        gnbIndex.classList.remove('active')
+                    });
+
+                    gnb[i].classList.add('active')
+                });
+
+                gnb[i].addEventListener('mouseleave', () => {
+                    gnb.forEach(gnbIndex => {
+                        gnbIndex.classList.remove('active')
+                    })
+                });
+            } // nav_mousehover:under-line
+
+            var swiper = new Swiper(".mySwiper", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            }); // illiyoon BEST! 
+
+
+            var swiper = new Swiper(".gift", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            }); //선물하기 기능
+
+
+        }; //script end
+
+    </script>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header">
+            <div class="inner">
+
+                <div class="top">
+                    <h1 class="logo">
+                        <a href="#">
+                            <img src="img/일리윤 로고.png" alt="logo">
+                        </a>
+                    </h1><!-- .logo end -->
+
+                    <ul class="nav_icon">
+                        <li>
+                            <a href="#"><img src="img/shoppingBag.svg" alt="장바구니"></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><img src="img/ring.svg" alt="알림"></a>
+                        </li>
+                    </ul><!-- .nav_icon -->
+                </div><!-- .top end -->
+
+                <ul class="gnb">
+
+                    <li class="active"><a href="#" class="depth">BEST</a></li>
+                    <li><a href="#" class="depth">유형별</a> </li>
+                    <li><a href="#" class="depth">라인별</a></li>
+                    <li><a href="#" class="depth">피부고민별</a></li>
+                    <li><a href="#" class="depth">선물하기</a></li>
+                </ul><!-- .gnb end -->
+
+            </div><!-- .inner end -->
+        </header><!-- .header end -->
+
+        <main class="main">
+            <section class="main_visual">
+                <img src="img/main_visual.jpg" alt="main_visual">
+                <div class="text">
+                    <div class="title">
+                        <p>공식몰 친구소개 EVENT</p>
+                        <h2>공식몰을 친구에게!
+                            카,톡 공유만 해도 100원 적립!</h2>
+                    </div><!-- .title end -->
+                    <span>좋은건 친구랑 함께!</span>
+                </div><!-- .text end -->
+            </section><!-- .main_visual end -->
+
+            <div class="inner">
+                <section class="section-01">
+                    <div class="list">
+
+                        <a href="#" class="item">
+                            <img src="img/main_icon_일리윤 케어박스.jpg" alt="icon">
+                            <p>일리윤</br>케어박스</p>
+                        </a><!-- .item end -->
+
+                        <a href="#" class="item">
+                            <img src="img/main_icon_회원가입 혜택.jpg" alt="icon">
+                            <p>회원가입 혜택</p>
+                        </a><!-- .item end -->
+
+                        <a href="#" class="item">
+                            <img src="img/main_icon_첫구매고객 웰컴딜.jpg" alt="icon">
+                            <p>첫구매고객</br> 웰컴딜</p>
+                        </a><!-- .item end -->
+
+                        <a href="#" class="item">
+                            <img src="img/main_icon_이달의 기획전.jpg" alt="icon">
+                            <p>이달의 기획전</p>
+                        </a><!-- .item end -->
+
+                        <a href="#" class="item">
+                            <img src="img/main_icon_할인쿠폰.jpg" alt="icon">
+                            <p>할인쿠폰</p>
+                        </a><!-- .item end -->
+
+                        <a href="#" class="item">
+                            <img src="img/main_icon_이벤트.jpg" alt="icon">
+                            <p>이벤트</p>
+                        </a><!-- .item end -->
+
+                        <a href="#" class="item">
+                            <img src="img/main_icon_선물하기.jpg" alt="icon">
+                            <p>선물하기</p>
+                        </a><!-- .item end -->
+
+                    </div><!-- .list end -->
+                </section><!-- .section-01 end -->
+
+
+                <section class="section-02">
+                    <div class="all">
+                        <div class="title">
+                            <img src="img/smile.png" alt="smile">
+                            <div class="text">
+                                <h3>일리윤 님을 위한 추천 상품!</h3>
+                                <img src="img/line.png" alt="line">
+                            </div><!-- .text end -->
+                            <div class="blur"></div><!-- .blur end -->
+                        </div><!-- .title end -->
+
+                        <ul class="button">
+                            <button>
+                                <li>아토피</li>
+                            </button>
+                            <button>
+                                <li>민감성</li>
+                            </button>
+                            <button>
+                                <li>트러블</li>
+                            </button>
+                            <button>
+                                <li>+</li>
+                            </button>
+                        </ul><!-- .button end -->
+
+                        <div class="list">
+                            <a href="#">
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="img/content_product.jpg" alt="content_product">
+                                    </div><!-- .image end -->
+                                    <button><img src="img/like.png" alt="즐겨찾기"></button>
+
+                                    <div class="box">
+                                        <p>BEST</p>
+                                        <p>인기상품</p>
+                                    </div><!-- .box end -->
+                                    <div class="text">
+                                        <strong>[작은숨결 큰사랑] 레드이치
+                                            종합보습 세트</strong>
+                                        <p>38,000원</p>
+                                        <div class="sale">
+                                            <h3>25%</h3>
+                                            <span>28,400원</span>
+                                        </div><!-- .sale end -->
+                                        <div class="review">
+                                            <a href="#" class="left">
+                                                <img src="img/star.png" alt="리뷰">
+                                                <p>4.9(2,490)</p>
+                                            </a><!-- .left end -->
+                                            <a href="#"><img src="img/bag.png" alt="장바구니"></a>
+                                        </div><!-- .review end -->
+
+                                    </div><!-- .text end -->
+                                </div><!-- .item end -->
+                            </a>
+
+                            <a href="#">
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="img/content_product.jpg" alt="content_product">
+                                    </div><!-- .image end -->
+                                    <button><img src="img/like.png" alt="즐겨찾기"></button>
+
+                                    <div class="box">
+                                        <p>BEST</p>
+                                        <p>인기상품</p>
+                                    </div><!-- .box end -->
+                                    <div class="text">
+                                        <strong>[작은숨결 큰사랑] 레드이치
+                                            종합보습 세트</strong>
+                                        <p>38,000원</p>
+                                        <div class="sale">
+                                            <h3>25%</h3>
+                                            <span>28,400원</span>
+                                        </div><!-- .sale end -->
+                                        <div class="review">
+                                            <a href="#" class="left">
+                                                <img src="img/star.png" alt="리뷰">
+                                                <p>4.9(2,490)</p>
+                                            </a><!-- .left end -->
+                                            <a href="#"><img src="img/bag.png" alt="장바구니"></a>
+                                        </div><!-- .review end -->
+
+                                    </div><!-- .text end -->
+                                </div><!-- .item end -->
+                            </a>
+
+                            <a href="#">
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="img/content_product.jpg" alt="content_product">
+                                    </div><!-- .image end -->
+                                    <button><img src="img/like.png" alt="즐겨찾기"></button>
+
+                                    <div class="box">
+                                        <p>BEST</p>
+                                        <p>인기상품</p>
+                                    </div><!-- .box end -->
+                                    <div class="text">
+                                        <strong>[작은숨결 큰사랑] 레드이치
+                                            종합보습 세트</strong>
+                                        <p>38,000원</p>
+                                        <div class="sale">
+                                            <h3>25%</h3>
+                                            <span>28,400원</span>
+                                        </div><!-- .sale end -->
+                                        <div class="review">
+                                            <a href="#" class="left">
+                                                <img src="img/star.png" alt="리뷰">
+                                                <p>4.9(2,490)</p>
+                                            </a><!-- .left end -->
+                                            <a href="#"><img src="img/bag.png" alt="장바구니"></a>
+                                        </div><!-- .review end -->
+
+                                    </div><!-- .text end -->
+                                </div><!-- .item end -->
+                            </a>
+
+                            <a href="#">
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="img/content_product.jpg" alt="content_product">
+                                    </div><!-- .image end -->
+                                    <button><img src="img/like.png" alt="즐겨찾기"></button>
+
+                                    <div class="box">
+                                        <p>BEST</p>
+                                        <p>인기상품</p>
+                                    </div><!-- .box end -->
+                                    <div class="text">
+                                        <strong>[작은숨결 큰사랑] 레드이치
+                                            종합보습 세트</strong>
+                                        <p>38,000원</p>
+                                        <div class="sale">
+                                            <h3>25%</h3>
+                                            <span>28,400원</span>
+                                        </div><!-- .sale end -->
+                                        <div class="review">
+                                            <a href="#" class="left">
+                                                <img src="img/star.png" alt="리뷰">
+                                                <p>4.9(2,490)</p>
+                                            </a><!-- .left end -->
+                                            <a href="#"><img src="img/bag.png" alt="장바구니"></a>
+                                        </div><!-- .review end -->
+
+                                    </div><!-- .text end -->
+                                </div><!-- .item end -->
+                            </a>
+
+                            <a href="#">
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="img/content_product.jpg" alt="content_product">
+                                    </div><!-- .image end -->
+                                    <button><img src="img/like.png" alt="즐겨찾기"></button>
+
+                                    <div class="box">
+                                        <p>BEST</p>
+                                        <p>인기상품</p>
+                                    </div><!-- .box end -->
+                                    <div class="text">
+                                        <strong>[작은숨결 큰사랑] 레드이치
+                                            종합보습 세트</strong>
+                                        <p>38,000원</p>
+                                        <div class="sale">
+                                            <h3>25%</h3>
+                                            <span>28,400원</span>
+                                        </div><!-- .sale end -->
+                                        <div class="review">
+                                            <a href="#" class="left">
+                                                <img src="img/star.png" alt="리뷰">
+                                                <p>4.9(2,490)</p>
+                                            </a><!-- .left end -->
+                                            <a href="#"><img src="img/bag.png" alt="장바구니"></a>
+                                        </div><!-- .review end -->
+
+                                    </div><!-- .text end -->
+                                </div><!-- .item end -->
+                            </a>
+
+                            <a href="#">
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="img/content_product.jpg" alt="content_product">
+                                    </div><!-- .image end -->
+                                    <button><img src="img/like.png" alt="즐겨찾기"></button>
+
+                                    <div class="box">
+                                        <p>BEST</p>
+                                        <p>인기상품</p>
+                                    </div><!-- .box end -->
+                                    <div class="text">
+                                        <strong>[작은숨결 큰사랑] 레드이치
+                                            종합보습 세트</strong>
+                                        <p>38,000원</p>
+                                        <div class="sale">
+                                            <h3>25%</h3>
+                                            <span>28,400원</span>
+                                        </div><!-- .sale end -->
+                                        <div class="review">
+                                            <a href="#" class="left">
+                                                <img src="img/star.png" alt="리뷰">
+                                                <p>4.9(2,490)</p>
+                                            </a><!-- .left end -->
+                                            <a href="#" class="right"><img src="img/bag.png" alt="장바구니"></a>
+                                        </div><!-- .review end -->
+
+                                    </div><!-- .text end -->
+                                </div><!-- .item end -->
+                            </a>
+
+                        </div><!-- .list end -->
+                    </div><!-- .all end -->
+                </section><!-- .section-02 end -->
+
+                <section class="section-03">
+                    <a href="#"><img src="img/event.png" alt="event"></a>
+                </section><!-- .section-03 end -->
+
+                <section class="section-04">
+                    <div class="title">
+                        <h3>일리윤 BEST!</h3>
+                        <a href="#" class="info">
+                            <p>더보기</p>
+                            <img src="img/next.png" alt="next">
+                        </a><!-- .info end -->
+                    </div><!-- .title end -->
+
+                    <ul class="menu_btn">
+                        <li><a href="#">전체</a></li>
+                        <li><a href="#">세트상품</a></li>
+                        <li><a href="#">바디보습</a></li>
+                        <li><a href="#">클렌져</a></li>
+                        <li><a href="#">스킨케어</a></li>
+                        <li><a href="#">선케어</a></li>
+                        <li><a href="#">기타</a></li>
+                    </ul><!-- .menu_btn end -->
+
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <a href="#" class="item">
+                                    <div class="image">
+                                        <img src="img/content_product.jpg" alt="content_product">
+                                    </div><!-- .image end -->
+                                    <button><img src="img/like.png" alt="즐겨찾기"></button>
+
+                                    <div class="box">
+                                        <p>인기상품</p>
+                                    </div><!-- .box end -->
+                                    <div class="text">
+                                        <strong>[작은숨결 큰사랑] 레드이치
+                                            종합보습 세트</strong>
+                                        <p>38,000원</p>
+                                        <div class="sale">
+                                            <h3>25%</h3>
+                                            <span>28,400원</span>
+                                        </div><!-- .sale end -->
+                                        <div class="review">
+                                            <a href="#" class="left">
+                                                <img src="img/star.png" alt="리뷰">
+                                                <p>4.9(2,490)</p>
+                                            </a><!-- .left end -->
+                                            <a href="#" class="right"><img src="img/bag.png" alt="장바구니"></a>
+                                        </div><!-- .review end -->
+
+                                    </div><!-- .text end -->
+                                </a><!-- .item end -->
+                            </div><!-- .swiper-slide end -->
+
+                            <div class="swiper-slide">
+                                <a href="#" class="item">
+                                    <div class="image">
+                                        <img src="img/content_product(2).jpg" alt="content_product">
+                                    </div><!-- .image end -->
+                                    <button><img src="img/like.png" alt="즐겨찾기"></button>
+
+                                    <div class="box">
+                                        <p>NEW</p>
+                                        <p>인기상품</p>
+                                    </div><!-- .box end -->
+                                    <div class="text">
+                                        <strong>[작은숨결 큰사랑] 세라마이드 아토 종합 세트</strong>
+                                        <p>50,000원</p>
+                                        <div class="sale">
+                                            <h3>33%</h3>
+                                            <span>33,700원</span>
+                                        </div><!-- .sale end -->
+                                        <div class="review">
+                                            <a href="#" class="left">
+                                                <img src="img/star.png" alt="리뷰">
+                                                <p>5.0(64)</p>
+                                            </a><!-- .left end -->
+                                            <a href="#" class="right"><img src="img/bag.png" alt="장바구니"></a>
+                                        </div><!-- .review end -->
+
+                                    </div><!-- .text end -->
+                                </a><!-- .item end -->
+                            </div><!-- .swiper-slide end -->
+
+                            <div class="swiper-slide">
+                                <a href="#" class="item">
+                                    <div class="image">
+                                        <img src="img/content_product(3).jpg" alt="content_product">
+                                    </div><!-- .image end -->
+                                    <button><img src="img/like.png" alt="즐겨찾기"></button>
+
+                                    <div class="box">
+                                        <p>인기상품</p>
+                                    </div><!-- .box end -->
+                                    <div class="text">
+                                        <strong>[한여름의 콜라보] 일리윤 시카 아크네 바디워시 세트 (400ml*2입)</strong>
+                                        <p>38,000원</p>
+                                        <div class="sale">
+                                            <h3>25%</h3>
+                                            <span>28,500원</span>
+                                        </div><!-- .sale end -->
+                                        <div class="review">
+                                            <a href="#" class="left">
+                                                <img src="img/star.png" alt="리뷰">
+                                                <p>4.3(1,025)</p>
+                                            </a><!-- .left end -->
+                                            <a href="#" class="right"><img src="img/bag.png" alt="장바구니"></a>
+                                        </div><!-- .review end -->
+
+                                    </div><!-- .text end -->
+                                </a><!-- .item end -->
+                            </div><!-- .swiper-slide end -->
+
+                            <div class="swiper-slide">
+                                <a href="#" class="item">
+                                    <div class="image">
+                                        <img src="img/content_product(4).jpg" alt="content_product">
+                                    </div><!-- .image end -->
+                                    <button><img src="img/like.png" alt="즐겨찾기"></button>
+
+                                    <div class="box">
+                                        <p>NEW</p>
+                                        <p>인기상품</p>
+                                    </div><!-- .box end -->
+                                    <div class="text">
+                                        <strong>[작은숨결 큰사랑] 레드이치
+                                            종합보습 세트</strong>
+                                        <p>41,700원</p>
+                                        <div class="sale">
+                                            <h3>32%</h3>
+                                            <span>28,300원</span>
+                                        </div><!-- .sale end -->
+                                        <div class="review">
+                                            <a href="#" class="left">
+                                                <img src="img/star.png" alt="리뷰">
+                                                <p>4.9(158)</p>
+                                            </a><!-- .left end -->
+                                            <a href="#" class="right"><img src="img/bag.png" alt="장바구니"></a>
+                                        </div><!-- .review end -->
+
+                                    </div><!-- .text end -->
+                                </a><!-- .item end -->
+                            </div><!-- .swiper-slide end -->
+
+                            <div class="swiper-slide">
+                                <a href="#" class="item">
+                                    <div class="image">
+                                        <img src="img/content_product(5).jpg" alt="content_product">
+                                    </div><!-- .image end -->
+                                    <button><img src="img/like.png" alt="즐겨찾기"></button>
+
+                                    <div class="box">
+                                        <p>NEW</p>
+                                        <p>인기상품</p>
+                                    </div><!-- .box end -->
+                                    <div class="text">
+                                        <strong>라뽀드베베 썸머 아기케어세트 콜라보_일리윤X베베드피노 언더웨어</strong>
+                                        <p>110,700원</p>
+                                        <div class="sale">
+                                            <h3>40%</h3>
+                                            <span>66,150원</span>
+                                        </div><!-- .sale end -->
+                                        <div class="review">
+                                            <a href="#" class="left">
+                                                <img src="img/star.png" alt="리뷰">
+                                                <p>4.7(225)</p>
+                                            </a><!-- .left end -->
+                                            <a href="#" class="right"><img src="img/bag.png" alt="장바구니"></a>
+                                        </div><!-- .review end -->
+
+                                    </div><!-- .text end -->
+                                </a><!-- .item end -->
+                            </div><!-- .swiper-slide end -->
+
+                            <div class="swiper-slide">
+                                <a href="#" class="item">
+                                    <div class="image">
+                                        <img src="img/content_product(6).jpg" alt="content_product">
+                                    </div><!-- .image end -->
+                                    <button><img src="img/like.png" alt="즐겨찾기"></button>
+
+                                    <div class="box">
+                                        <p>인기상품</p>
+                                    </div><!-- .box end -->
+                                    <div class="text">
+                                        <strong>[로션 100ml 증정] 일리윤 젠틀 딥 페이셜클렌저 250ml 페밀리세트</strong>
+                                        <p>42,000원</p>
+                                        <div class="sale">
+                                            <h3>22%</h3>
+                                            <span>32,600원</span>
+                                        </div><!-- .sale end -->
+                                        <div class="review">
+                                            <a href="#" class="left">
+                                                <img src="img/star.png" alt="리뷰">
+                                                <p>4.6(1,777)</p>
+                                            </a><!-- .left end -->
+                                            <a href="#" class="right"><img src="img/bag.png" alt="장바구니"></a>
+                                        </div><!-- .review end -->
+
+                                    </div><!-- .text end -->
+                                </a><!-- .item end -->
+                            </div><!-- .swiper-slide end -->
+
+                            <div class="swiper-slide">
+                                <a href="#" class="item">
+                                    <div class="image">
+                                        <img src="img/content_product(7).jpg" alt="content_product">
+                                    </div><!-- .image end -->
+                                    <button><img src="img/like.png" alt="즐겨찾기"></button>
+
+                                    <div class="box">
+                                        <p>NEW</p>
+                                        <p>인기상품</p>
+                                    </div><!-- .box end -->
+                                    <div class="text">
+                                        <strong>[한여름 피부방어] 히알루론모이스춰수분크림100ml 수분케어 세트 (크림100ml *2개+수딩젤증정)</strong>
+                                        <p>41,700원</p>
+                                        <div class="sale">
+                                            <h3>39%</h3>
+                                            <span>25,500원</span>
+                                        </div><!-- .sale end -->
+                                        <div class="review">
+                                            <a href="#" class="left">
+                                                <img src="img/star.png" alt="리뷰">
+                                                <p>4.9(52)</p>
+                                            </a><!-- .left end -->
+                                            <a href="#" class="right"><img src="img/bag.png" alt="장바구니"></a>
+                                        </div><!-- .review end -->
+
+                                    </div><!-- .text end -->
+                                </a><!-- .item end -->
+                            </div><!-- .swiper-slide end -->
+
+                        </div><!-- .swiper-wrapper end -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div><!-- .swiper mySwiper end -->
+
+
+
+                </section><!-- .section-04 end -->
+
+                <section class="section-05">
+                    <div class="title">
+                        <h3>Only Illiyoon</h3>
+                        <a href="#" class="info">
+                            <p>더보기</p>
+                            <img src="img/next.png" alt="next">
+                        </a><!-- .info end -->
+                    </div><!-- .title end -->
+
+                    <div class="list">
+                        <a href="#">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/content_product.jpg" alt="content_product">
+                                </div><!-- .image end -->
+                                <button><img src="img/like.png" alt="즐겨찾기"></button>
+
+                                <div class="box">
+                                    <p>BEST</p>
+                                    <p>인기상품</p>
+                                </div><!-- .box end -->
+                                <div class="text">
+                                    <strong>[작은숨결 큰사랑] 레드이치
+                                        종합보습 세트</strong>
+                                    <p>38,000원</p>
+                                    <div class="sale">
+                                        <h3>25%</h3>
+                                        <span>28,400원</span>
+                                    </div><!-- .sale end -->
+                                    <div class="review">
+                                        <a href="#" class="left">
+                                            <img src="img/star.png" alt="리뷰">
+                                            <p>4.9(2,490)</p>
+                                        </a><!-- .left end -->
+                                        <a href="#"><img src="img/bag.png" alt="장바구니"></a>
+                                    </div><!-- .review end -->
+
+                                </div><!-- .text end -->
+                            </div><!-- .item end -->
+                        </a>
+
+                        <a href="#">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/content_product.jpg" alt="content_product">
+                                </div><!-- .image end -->
+                                <button><img src="img/like.png" alt="즐겨찾기"></button>
+
+                                <div class="box">
+                                    <p>BEST</p>
+                                    <p>인기상품</p>
+                                </div><!-- .box end -->
+                                <div class="text">
+                                    <strong>[작은숨결 큰사랑] 레드이치
+                                        종합보습 세트</strong>
+                                    <p>38,000원</p>
+                                    <div class="sale">
+                                        <h3>25%</h3>
+                                        <span>28,400원</span>
+                                    </div><!-- .sale end -->
+                                    <div class="review">
+                                        <a href="#" class="left">
+                                            <img src="img/star.png" alt="리뷰">
+                                            <p>4.9(2,490)</p>
+                                        </a><!-- .left end -->
+                                        <a href="#"><img src="img/bag.png" alt="장바구니"></a>
+                                    </div><!-- .review end -->
+
+                                </div><!-- .text end -->
+                            </div><!-- .item end -->
+                        </a>
+
+                        <a href="#">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/content_product.jpg" alt="content_product">
+                                </div><!-- .image end -->
+                                <button><img src="img/like.png" alt="즐겨찾기"></button>
+
+                                <div class="box">
+                                    <p>BEST</p>
+                                    <p>인기상품</p>
+                                </div><!-- .box end -->
+                                <div class="text">
+                                    <strong>[작은숨결 큰사랑] 레드이치
+                                        종합보습 세트</strong>
+                                    <p>38,000원</p>
+                                    <div class="sale">
+                                        <h3>25%</h3>
+                                        <span>28,400원</span>
+                                    </div><!-- .sale end -->
+                                    <div class="review">
+                                        <a href="#" class="left">
+                                            <img src="img/star.png" alt="리뷰">
+                                            <p>4.9(2,490)</p>
+                                        </a><!-- .left end -->
+                                        <a href="#"><img src="img/bag.png" alt="장바구니"></a>
+                                    </div><!-- .review end -->
+
+                                </div><!-- .text end -->
+                            </div><!-- .item end -->
+                        </a>
+
+                        <a href="#">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/content_product.jpg" alt="content_product">
+                                </div><!-- .image end -->
+                                <button><img src="img/like.png" alt="즐겨찾기"></button>
+
+                                <div class="box">
+                                    <p>BEST</p>
+                                    <p>인기상품</p>
+                                </div><!-- .box end -->
+                                <div class="text">
+                                    <strong>[작은숨결 큰사랑] 레드이치
+                                        종합보습 세트</strong>
+                                    <p>38,000원</p>
+                                    <div class="sale">
+                                        <h3>25%</h3>
+                                        <span>28,400원</span>
+                                    </div><!-- .sale end -->
+                                    <div class="review">
+                                        <a href="#" class="left">
+                                            <img src="img/star.png" alt="리뷰">
+                                            <p>4.9(2,490)</p>
+                                        </a><!-- .left end -->
+                                        <a href="#"><img src="img/bag.png" alt="장바구니"></a>
+                                    </div><!-- .review end -->
+
+                                </div><!-- .text end -->
+                            </div><!-- .item end -->
+                        </a>
+
+                        <a href="#">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/content_product.jpg" alt="content_product">
+                                </div><!-- .image end -->
+                                <button><img src="img/like.png" alt="즐겨찾기"></button>
+
+                                <div class="box">
+                                    <p>BEST</p>
+                                    <p>인기상품</p>
+                                </div><!-- .box end -->
+                                <div class="text">
+                                    <strong>[작은숨결 큰사랑] 레드이치
+                                        종합보습 세트</strong>
+                                    <p>38,000원</p>
+                                    <div class="sale">
+                                        <h3>25%</h3>
+                                        <span>28,400원</span>
+                                    </div><!-- .sale end -->
+                                    <div class="review">
+                                        <a href="#" class="left">
+                                            <img src="img/star.png" alt="리뷰">
+                                            <p>4.9(2,490)</p>
+                                        </a><!-- .left end -->
+                                        <a href="#"><img src="img/bag.png" alt="장바구니"></a>
+                                    </div><!-- .review end -->
+
+                                </div><!-- .text end -->
+                            </div><!-- .item end -->
+                        </a>
+
+                        <a href="#">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/content_product.jpg" alt="content_product">
+                                </div><!-- .image end -->
+                                <button><img src="img/like.png" alt="즐겨찾기"></button>
+
+                                <div class="box">
+                                    <p>BEST</p>
+                                    <p>인기상품</p>
+                                </div><!-- .box end -->
+                                <div class="text">
+                                    <strong>[작은숨결 큰사랑] 레드이치
+                                        종합보습 세트</strong>
+                                    <p>38,000원</p>
+                                    <div class="sale">
+                                        <h3>25%</h3>
+                                        <span>28,400원</span>
+                                    </div><!-- .sale end -->
+                                    <div class="review">
+                                        <a href="#" class="left">
+                                            <img src="img/star.png" alt="리뷰">
+                                            <p>4.9(2,490)</p>
+                                        </a><!-- .left end -->
+                                        <a href="#"><img src="img/bag.png" alt="장바구니"></a>
+                                    </div><!-- .review end -->
+
+                                </div><!-- .text end -->
+                            </div><!-- .item end -->
+                        </a>
+
+
+                    </div><!-- .list end -->
+                </section><!-- .section-05 end -->
+
+                <section class="section-06">
+                    <div class="title">
+                        <h3>EVENT</h3>
+                        <a href="#" class="info">
+                            <p>더보기</p>
+                            <img src="img/next.png" alt="next">
+                        </a><!-- .info end -->
+                    </div><!-- .title end -->
+
+                    <div class="item">
+                        <a href="#" class="image">
+                            <img src="img/event2.png" alt="event">
+                        </a><!-- .image end -->
+                        <a href="#" class="image">
+                            <img src="img/event2.png" alt="event">
+                        </a><!-- .image end -->
+                        <a href="#" class="image">
+                            <img src="img/event2.png" alt="event">
+                        </a><!-- .image end -->
+                        <a href="#" class="image">
+                            <img src="img/event2.png" alt="event">
+                        </a><!-- .image end -->
+                        <a href="#" class="image">
+                            <img src="img/event2.png" alt="event">
+                        </a><!-- .image end -->
+                    </div><!-- .item end -->
+
+                </section><!-- .section-06 end -->
+
+                <section class="section-07">
+                    <div class="title">
+                        <h3>Gift For ···</h3>
+                        <a href="#" class="info">
+                            <p>주문하러 가기</p>
+                            <img src="img/next.png" alt="next">
+                        </a><!-- .info end -->
+                    </div><!-- .title end -->
+
+                    <!-- Swiper -->
+                    <div class="swiper gift">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="img/card.png" alt="card">
+                                    <h3>다 잘될거야! 🍀LUCKY POWER🍀</h3>
+                                </div><!-- .image end -->
+                            </div><!-- swiper-slide end -->
+
+                             
+                            <div class="swiper-slide">
+                                <div class="image big">
+                                    <img src="img/card_1.png" alt="card">
+                                    <h3>💘사랑은 말보다 행동으로</h3>
+                                    <div class="search_box">
+                                        <input type="text" name="" id="" placeholder="✍ 문구를 수정해주세요.">
+                                    </div><!-- .search_box end -->
+                                </div><!-- .image end -->
+                            </div><!-- swiper-slide end -->
+
+
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="img/card-7.png" alt="card">
+                                    <h3>두근두근 선물와쏘🥵</h3>
+                                </div><!-- .image end -->
+                            </div><!-- swiper-slide end -->
+
+                        </div><!-- swiper-wrapper end -->
+                        <div class="swiper-pagination"></div>
+                    </div><!-- swiper gift end -->
+
+
+                </section><!-- .section-07 end -->
+
+            </div><!-- .inner end -->
+        </main><!-- .main end -->
+
+        <div class="bottom_nav">
+            <!-- 하단고정바 -->
+        </div><!-- .bottom_nav end -->
+
+        <footer class="footer">
+
+        </footer><!-- .footer end -->
+
+    </div><!-- #wrap end -->
+</body>
+
+</html>

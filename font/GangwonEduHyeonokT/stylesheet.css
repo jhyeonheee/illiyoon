@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'GangwonEduHyeonokT';
+    src: url('GangwonEduHyeonokTMedium.eot');
+    src: url('GangwonEduHyeonokTMedium.eot?#iefix') format('embedded-opentype'),
+        url('GangwonEduHyeonokTMedium.woff2') format('woff2'),
+        url('GangwonEduHyeonokTMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
